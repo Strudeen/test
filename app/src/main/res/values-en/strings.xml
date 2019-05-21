@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Units Converter</string>
+    <string name="c">Celsius to Fahrenheit</string>
+    <string name="f">Fahrenheit to Celsius</string>
+    <string name="k">Celsius to Kelvin</string>
+    <string name="ck">Kelvin to Celsius</string>
+</resources>

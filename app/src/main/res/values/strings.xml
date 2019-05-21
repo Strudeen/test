@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Conversor de unidades</string>
+    <string name="c">Celcios a Fahrenheit</string>
+    <string name="f">Fahrenheit a Celcios</string>
+    <string name="k">Celcios a Kelvin</string>
+    <string name="ck">Kelvin a Celcios</string>
+</resources>
