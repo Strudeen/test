@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Celcius_to_farenheit"></activity>
+        <activity android:name=".Celcius_to_farenheit" />
+        <activity android:name=".far_to_cel"></activity>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Celcius_to_farenheit extends AppCompatActivity {
     EditText cent;
@@ -17,18 +18,21 @@ public class Celcius_to_farenheit extends AppCompatActivity {
 
         cent = (EditText)findViewById(R.id.editText);
         far = (TextView)findViewById(R.id.textView5);
+        try {
+            cent.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 
-        cent.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    float faren;
+                    faren = (1.8f)*Float.parseFloat(cent.getText().toString())+32;
+                    far.setText(""+faren);
 
-                float faren;
-                faren = (1.8f)*Float.parseFloat(cent.getText().toString())+32;
-                far.setText(""+faren);
-
-                return false;
-            }
-        });
+                    return false;
+                }
+            });
+        } catch (Exception e){
+        Toast.makeText(getApplicationContext(), "El texto no puede estar vacio",Toast.LENGTH_SHORT).show();
+    }
 
     }
 }
